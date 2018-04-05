@@ -2,7 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:layout_marginBottom="32dp"
     tools:context="com.example.android.CourtCounter.MainActivity">
 
     <LinearLayout
@@ -21,7 +24,9 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="Team A"
-                android:textSize="16sp"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
             />
 
             <TextView
@@ -29,16 +34,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="0"
-                android:textSize="16sp"
                 android:layout_marginTop="16dp"
+                android:text="0"
+                android:textSize="56sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-light"
             />
 
             <Button
                 android:id="@+id/team_a_three_point_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="24dp"
                 android:text="+3 Points"
                 android:onClick="scoreThreePointsTeamA"
              />
@@ -62,6 +69,15 @@
             />
         </LinearLayout>
 
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@android:color/darker_gray">
+
+        </View>
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="0dp"
@@ -73,7 +89,9 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="Team B"
-                android:textSize="16sp"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
             />
 
             <TextView
@@ -81,16 +99,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="0"
-                android:textSize="16sp"
                 android:layout_marginTop="16dp"
+                android:text="0"
+                android:textSize="56sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-light"
             />
 
             <Button
                 android:id="@+id/team_b_three_point_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="24dp"
                 android:text="+3 Points"
                 android:onClick="scoreThreePointsTeamB"
              />
