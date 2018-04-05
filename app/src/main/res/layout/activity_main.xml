@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.android.CourtCounter.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Team A"
+        android:textSize="16sp"
+    />
+
+    <TextView
+        android:id="@+id/team_a_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+    />
+
+    <Button
+        android:id="@+id/team_a_three_point_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="+3 Points"
+        android:onClick="scoreThreePointsTeamA"
+     />
+
+    <Button
+        android:id="@+id/team_a_two_point_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="+2 Points"
+        android:onClick="scoreTwoPointsTeamA"
+    />
+
+    <Button
+        android:id="@+id/team_a_free_throw_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Free Throw"
+        android:onClick="scoreFreeThrowTeamA"
+    />
+
+    <Button
+        android:id="@+id/team_a_reset_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Reset"
+        android:onClick="resetTeamA"
+    />
+
+
+
+</LinearLayout>
